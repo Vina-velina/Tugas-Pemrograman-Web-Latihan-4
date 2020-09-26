@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <title>FORM PENDAFTARAN</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="bckgrn">
+            <h1 class="form">FORM PENDAFTARAN PENGURUS HMJ TI</h1>
+            <div class="kotak_daftar">
+                <p class="tulisan_daftar">Silahkan Isi Data Diri Anda </p>
+
+                <form id="form" action="#" method="POST">
+                    <div class="form_group">
+                        <label for="nama_lengkap">Nama Lengkap</label>
+                        <input type="text" id="nama_lengkap" name="nama_lengkap"
+                            class="form_daftar"
+                            placeholder="Silahkan Masukkan Nama Anda ..">
+                    </div>
+                    <div class="form_group">
+                        <label for="alamat">Alamat</label>
+                        <input type="text" name="alamat" id="alamat"
+                            class="form_daftar"
+                            placeholder="Masukkan Alamat Anda..">
+                    </div>
+
+                    <div class="form_group">
+                        <label for="jk">Jenis Kelamin</label> <br>
+                        <input type="radio" id="jk" name="jenis_Kelamin"
+                            value="Laki-Laki">Laki-Laki
+                        <input type="radio" id="jk" name="jenis_Kelamin"
+                            value="Perempuan">Perempuan <br>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="program_studi">Program Studi</label>
+                        <br>
+                        <select name="program_studi" id="program_studi">
+                            <option value="">Pilih Prodi</option>
+                            <option value="Pendidikan Teknik Informatika">Pendidikan
+                                Teknik Informatika
+                            </option>
+                            <option value="Manajemen Informatika">Manajemen
+                                Informatika</option>
+                            <option value="Sistem Informasi">Sistem Informasi</option>
+                            <option value="Ilmu Komputer">Ilmu Komputer</option>
+                        </select>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="semester">Semester</label> <br>
+                        <input type="radio" name="semester" value="3"
+                            id="semester">3
+                        <input type="radio" name="semester" value="5"
+                            id="semester">5
+                    </div>
+
+                    <div class="form_group">
+                        <label for="hobi">Hobi</label>
+                        <input type="text" name="hobi" class="form_daftar"
+                            id="hobi"
+                            placeholder="Silahkan Masukkan Hobi Anda .."><br>
+                    </div>
+                    <div class="form_group">
+                        <label for="peng_organisasi">Pengalaman Berorganisasi</label>
+                        <textarea name="peng_organisasi" id="peng_organisasi"
+                            class="form_daftar" cols="30"
+                            rows="10"></textarea>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="alasan_organisasi">Alasan
+                            Berorganisasi</label>
+                        <textarea name="alasan_organisasi"
+                            id="alasan_organisasi" class="form_daftar" cols="30"
+                            rows="10"></textarea>
+                    </div>
+                    <button type="submit">Simpan</button>
+                </form>
+            </div>
+        </div>
+        <script src="jquery.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

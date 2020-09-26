@@ -1,0 +1,210 @@
+ /* CSS reseting */
+
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+
+ /* HTML5 display-role reset for older browsers */
+
+ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+     display: block;
+ }
+
+ body {
+     line-height: 1;
+ }
+
+ ol, ul {
+     list-style: none;
+ }
+
+ blockquote, q {
+     quotes: none;
+ }
+
+ blockquote:before, blockquote:after, q:before, q:after {
+     content: '';
+     content: none;
+ }
+
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+
+ /* nicolasgallagher */
+
+ /**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ .cf:before, .cf:after {
+     content: " ";
+     /* 1 */
+     display: table;
+     /* 2 */
+ }
+
+ .cf:after {
+     clear: both;
+ }
+
+ /**
+  * For IE 6/7 only
+  * Include this rule to trigger hasLayout and contain floats.
+  */
+
+ .cf {
+     *zoom: 1;
+ }
+
+ /*CSS */
+
+ body {
+     font: 16px/28px'arrial', sans-serif;
+     background-color: blanchedalmond;
+     color: #000;
+ }
+
+ .logo {
+     float: left;
+     overflow: hidden;
+     padding: 50px;
+     width: 600px;
+ }
+
+ .awal {
+     padding: 50px;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 30px;
+ }
+
+ .content .isi p {
+     padding: 20px;
+     text-align: justify;
+ }
+
+ .daftar {
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+ .daftar a:hover {
+     color: skyblue;
+ }
+
+ /*CSS Daftar */
+
+ .bckgrn {
+     background: skyblue;
+ }
+
+ .form {
+     text-align: center;
+     /*ketebalan font*/
+     font-weight: 300;
+     padding: 20px;
+     font-size: 50px;
+     color: black solid;
+ }
+
+ .tulisan_daftar {
+     text-align: center;
+     /*membuat semua huruf menjadi kapital*/
+     text-transform: uppercase;
+ }
+
+ .kotak_daftar {
+     width: 800px;
+     background: white;
+     /*meletakkan form ke tengah*/
+     margin: 50px auto;
+     padding: 30px 20px;
+ }
+
+ label {
+     font-size: 11pt;
+ }
+
+ .form_daftar {
+     /*membuat lebar form penuh*/
+     box-sizing: border-box;
+     width: 100%;
+     padding: 10px;
+     font-size: 11pt;
+     margin-bottom: 20px;
+ }
+
+ button {
+     background: #46de4b;
+     color: white;
+     font-size: 11pt;
+     width: 100%;
+     border: none;
+     border-radius: 3px;
+     padding: 10px 20px;
+ }
+
+ /*responsive design*/
+
+ @media screen and (max-width: 768px) {
+     .logo {
+         width: 300px;
+     }
+     .awal {
+         padding: 30px;
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 20px;
+     }
+     .content .isi p {
+         padding: 10px;
+         text-align: justify;
+         margin: 1px;
+         padding-left: 400px;
+     }
+     .form {
+         font-size: 30px;
+     }
+     .kotak_daftar {
+         width: 500px;
+     }
+ }
+
+ @media screen and (max-width: 576px) {
+     .logo {
+         width: 200px;
+         margin: auto;
+     }
+     .awal {
+         font-family: 'Times New Roman', Times, serif;
+         font-size: 20px;
+         float: left;
+     }
+     .content .isi p {
+         padding: 10px;
+         text-align: justify;
+         margin: 1px;
+         float: left;
+     }
+     .form {
+         font-size: 20px;
+     }
+     .kotak_daftar {
+         width: 400px;
+     }
+ }
